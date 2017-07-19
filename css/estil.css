@@ -1,0 +1,17 @@
+.fonteSerif {
+font-family: "Times New Roman";
+font-size: 80px;
+}
+
+.fontSans-Serif{
+font-family: "Verdana";
+font-size: 40px;
+}
+
+.fontMonospace{
+font-family: "Courier New";
+font-size: 20px;
+}
+.conteudo{
+	font-size: 8px;
+}

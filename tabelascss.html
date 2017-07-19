@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tabela com Css</title>
+	<meta charset="utf-8"/>
+<style type="text/css">
+	table {
+			font-family: Verdana, Geneva, Arial, Helvetica;
+			font-size: 10pt;
+			text-align: center;
+			padding-left: 4px;
+			border: 1px solid black;
+			border-collapse:collapse;
+
+	}
+	#menu{ 
+			background-color: gray;
+			text-align: center;
+	 }
+	 #conteudo{ 
+			background-color: #CECE7B;
+			text-align: center;
+	 }
+	#rodape{
+
+		background-color: red;
+		width: 100%;
+		height: 30px;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+	}
+	 td {
+	 	border: 1px solid black;
+	 }
+	 th {
+	 	border: 1px solid black;
+	 }
+
+	 
+tr:hover {
+    background-color: yellow;
+}
+	 th {
+	 	background-color: #b2beff;
+
+	 }
+
+	 .classe1 {
+	 	background-color: #C1CDC1;
+	 }
+
+
+	 .classe2 {
+	 	background-color: #E0EEE0;
+	 }
+
+	 .classe3 {
+	 	background-color: #EEE0E5;
+	 }
+
+
+</style>
+</head>
+<body>
+<div id="menu">
+	Home | Quem somos | Contato
+
+</div>
+<div id="conteudo">
+	Bloco para o Conteudo Site
+
+</div>
+<table>
+	<tr>
+		<th>Loja</th>
+		<th>Janeiro</th>
+		<th>Fevereiro</th>
+	</tr>
+	<tr class="classe1">
+	<td>Filial 1</td>
+	<td>120</td>
+	<td>320</td>		
+	</tr>
+
+
+	<tr  class="classe2">
+	<td>Filial 2</td>
+	<td>120</td>
+	<td>120</td>		
+	</tr>
+
+
+<tr class="classe3">
+	<td>Total</td>
+	<td>240</td>
+	<td>440</td>		
+	</tr>
+</table>
+<div id="rodape">
+	Copyright &copy; Todos os direitos Reservados
+
+
+
+
+</div>
+</body>
+</html>

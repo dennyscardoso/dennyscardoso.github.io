@@ -1,0 +1,29 @@
+#container {
+			width:500px
+		}
+
+		#cabecalho {
+			background-color:#ccc;
+			margin-bottom:0;
+		}
+		
+		#menu {
+			background-color:#ddd;
+			height:200px;
+			width:100px;
+			float:left;	
+
+		}
+
+		#conteudo{
+			background-color:#EEE;
+			height:200px;
+			width:400px; 
+			float:left;
+		}
+
+		#rodape{
+			background-color:#ccc;
+			clear:both;
+			text-align:center;
+		}

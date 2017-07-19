@@ -1,0 +1,100 @@
+
+
+	<!DOCTYPE html >
+	 
+	<html>
+	 
+	<head>
+		<title>Display</title>
+		<meta charset="utf-8" />
+		<style type="text/css">
+			
+			body {
+				background: #61bd8c;
+			}
+			#conteudo{
+				background: #FFFFFF;
+				padding: 10px;
+				width: 600px;
+				margin: 100px;
+				position: relative;
+				left: 600px;
+				
+
+
+
+
+			}
+			.caixa{
+				background: red;
+				margin: 10px;
+				width: 100px;
+				height: 100px;
+				color: #FFFFFF;
+					}
+			#relativo{
+				position: relative;
+				left: 60px;
+
+			}
+
+			#absoluto{
+				position: absolute;
+				left: 200px;
+			}
+			#fixo{
+				position: fixed;
+				left 300px;
+				top: 0px;
+				}
+				#block{
+			display: block;
+				
+			}
+				#inline{
+			display: inline;
+			}
+				#none{
+			display: none;
+				}
+				#inline-block{
+			display: inline-block;
+				}
+
+		</style>
+	</head>
+	 
+	<body>
+		<span>Container body </span>
+		
+		<div id=conteudo>
+			container div
+			<div id="relativo" class="caixa">
+				Relativo
+			</div>
+		</div>	
+		<div id="absoluto" class="caixa">
+				Absoluto
+			</div>
+
+			<div id="fixo" class="caixa">
+				Fixo
+			</div>
+			<div class="caixa" id="block">
+			display :bloqueado
+			</div>
+			<div class="caixa" id="inline">
+			display :inline
+			</div>
+			<div class="caixa" id="none">
+			display :none
+			</div>
+			<div class="caixa" id="inline-block">
+			display :inline-block
+			</div>
+		</body>
+	</html>
+
+
+
+

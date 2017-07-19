@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>aula 14</title>
+	<style type="text/css">
+		.pessoa{
+			color: red;
+		}
+		.pessoa[data-idade = '30']{
+			color: blue;
+		}
+
+		.pessoa::before {
+			content: 'antes';
+		}
+
+		.pessoa::after {
+			content: 'depois';
+		}
+
+
+
+
+	</style>
+	<script type="text/javascript">
+		function mostravalor(componente){
+			var valor = componente.getAttribute('data-idade');
+			alert(valor);		}
+	</script>
+</head>
+<body>
+<ul id="pessoa">
+	<li class="pessoa" onclick="mostravalor(this)" data-idade="20"  data-altura="1,70"> João</li>
+	<li class="pessoa" onclick="mostravalor(this)"data-idade="30" data-altura="1,60"> José</li>
+	<li class="pessoa" onclick="mostravalor(this)" data-idade="40" data-altura="1,90"> Maria</li>
+
+</ul>
+
+</body>
+</html>
