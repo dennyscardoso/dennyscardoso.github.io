@@ -1,0 +1,95 @@
+  .noticia {s
+            font-family: "opensans-regular",arial,sans-serif;            
+            color: #333;
+            font-size: 16px;
+            padding-left: 15px;
+            padding-right: 10px;
+           text-align: justify;
+           line-height: 24px;
+           width: 500px;
+           margin: 20px;
+           float: left;
+
+        }
+
+        .noticia h1 {
+            color: #0000CD;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 8px;
+
+        }
+        .noticia h3 {
+            color: #0000CD;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+            margin: 8px;
+
+        }
+
+
+        
+
+        .box1 {
+            background: #DA70D6;
+            width: 300px;
+            height: 140px;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .box2 {
+            background: #DA70D6;
+            border-radius: 20px;
+            width: 300px;
+            height: 140px;
+            padding: 10px;
+            margin: 10px;
+        }
+        
+        .box3 {
+            background: #b9c941;
+            width: 300px;
+            height: 140px;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            
+        }
+
+          .box4 {
+            width: 100px;
+            padding: 20px;
+            border: 15px;
+            box-sizing: border-box;
+            float: left;
+            
+        }
+        
+
+       .noticia p{
+       	clear: both;
+
+       }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,7 +16,7 @@
 				background: #32CD32;
 				position: relative;
 				top: -90px;
-				display: inline-block;
+				float: left;
 				}
 
 				section{
@@ -29,10 +29,10 @@
 			}
 
 			aside{
-				width: 34%;
+				width: 35%;
 				height: 400px;
 				background: #32CD32;
-				display: inline-block;
+				float: right;
 				}
 				
 				footer{
