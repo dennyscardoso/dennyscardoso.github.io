@@ -1,0 +1,97 @@
+/*Limpar formatações padrão*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background: #f3f3f3;
+}
+
+table {
+	border: 0.01px ;
+	width: 100%;
+	background: #CFCFCF
+;
+
+}
+
+
+#navegacao {
+	background: #fff;
+
+	
+
+}
+
+#area {
+float: right; width: 100%;
+}
+
+#area-principal {
+
+}
+
+#logo {
+	
+}
+
+#menu {
+ float: left; width: 60%;
+
+}
+
+#postagem {
+	
+	
+}
+
+h2 {
+	
+}
+
+/****************************************************
+***********************Formatação do menu************/
+a {
+	
+}
+/*Links não visitados*/
+a:link {
+
+}
+
+/*Links vistados*/
+a:visited {
+	
+}
+
+/*Links hover*/
+a:hover {
+	
+}
+
+/*Links active*/
+a:active {
+	
+}
+
+
+/*Classes*/
+.verde {
+color: #BCEE68;
+}
+
+.data-postagem {
+	
+	
+}
+
+.img-postagem{
+	
+}
+
+.postado {
+	
+	
+}
