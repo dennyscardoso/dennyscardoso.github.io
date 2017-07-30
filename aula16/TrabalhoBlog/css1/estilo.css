@@ -12,7 +12,7 @@ body {
 table {
 	border: 0.01px ;
 	width: 100%;
-	background: #CFCFCF
+	background: #CFCFCF;
 ;
 
 }
@@ -20,13 +20,14 @@ table {
 
 #navegacao {
 	background: #fff;
-
+	text-align:;
+	top: -50%;
 	
 
 }
 
 #area {
-float: right; width: 100%;
+width: 100%; 
 }
 
 #area-principal {
@@ -34,11 +35,15 @@ float: right; width: 100%;
 }
 
 #logo {
-	
+	text-align: left; 
+	width: 20%;
 }
 
 #menu {
- float: left; width: 60%;
+ /*float: left; width: 60%;*/
+ text-align: right; 
+ position: relative;
+ top: 80%;
 
 }
 
@@ -58,22 +63,26 @@ a {
 }
 /*Links não visitados*/
 a:link {
+color: #9C9C9C;
+text-decoration: none;
 
 }
 
 /*Links vistados*/
 a:visited {
-	
+	color: #9C9C9C;	
+	text-decoration: none;
 }
 
 /*Links hover*/
 a:hover {
+	color: #90EE90;
 	
 }
 
 /*Links active*/
 a:active {
-	
+	color:none;
 }
 
 
