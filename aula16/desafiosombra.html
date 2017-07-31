@@ -1,29 +1,106 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
-<head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="../css/desafiosombra.css">
-	<meta charset="utf-8">
-</head>
-<body>
-<center><h1>Desafio Sombra</h1></center>
-<center><div class="div1">
-	<div class="div2"  id="box"  id="div2">
+
+	<head>
+		<title>Programação Web</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
+		<style type="text/css">
+
+			body{
+			  background:#E6EEF6;
+			}
+
+			.box{
+			  width:40%;
+			  height:200px;
+			  float:left;
+			  background-color:white; 
+			  margin:25px 15px;
+			  border-radius:5px;
+			}
+
+			.box h3{
+			  font-family: 'Didact Gothic', sans-serif;
+			  font-weight:normal;
+			  text-align:center;
+			  padding-top:60px;
+			  color:#fff;
+			  border:2px dashed #F7EEEE;
+			  border-radius:5px;
+			  width:87%;
+			  height:100px;
+			  margin-left:6%;
+
+			}
+			.box1{
+			  background-color: #EBA39E;
+			}
+			.box2{
+			  background-color: #EDE89A;
+			}
+
+		.sombra1, .sombra2{
+		   position:relative;
+		}
+
+			/****************************************************************
+			*estilos para as sombras
+			****************************************************************/
+		.sombra1:before, .sombra1:after{
+			  position:absolute;
+			  content:"";
+			  bottom:12px;
+			  left:15px;
+			  top:80%;
+			  width:45%;
+			  z-index:-1		;
+			  box-shadow: 0 20px 15px #9B7468;
+			  transform: rotate(-6deg);
+			}
+
+			.sombra1:after{
+			  right: 15px;
+			  left: auto;
+			  transform: rotate(6deg);
+			}
+
+			.sombra2:before{
+			  position:absolute;
+			  content:"";
+			  width:80%;
+			  top:140px;
+			  bottom:15px;
+			  left:30px;
+			  background-color:#9F8641;
+			  z-index:-1;
+			  box-shadow: 0 23px 17px 0 #9F8641;
+			  transform:rotate(-4deg);
+			}
+
+
+		</style>
 		
 
-	</div>
+	</head>
+
+	
+
+	<body>
 
 
-	<div class="div3"  id="box">
-		
+  <div class="box box1 sombra1">
+    <h3>Sombra 1</h3>
+  </div>
 
 
 
-	</div>
+  <div class="box box2 sombra2">
+    <h3>Sombras 2</h3>
+  </div>
 
+	</body>
 
-
-</div></center>
-
-</body>
 </html>
