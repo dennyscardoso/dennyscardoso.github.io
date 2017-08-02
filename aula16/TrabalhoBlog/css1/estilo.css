@@ -33,9 +33,10 @@ width: 100%;
 #area-principal {
 
 background: green;
-margin-left: 10px;
-width: 95%;
+margin-left: 25%;
+width: 50%;
 height: 70%;
+float: center;
 background: linear-gradient(135deg , #E8E8E8,#A2CD5A);,
 box-sizing: border-box;
 box-shadow: 10px 10px gray;
@@ -49,7 +50,7 @@ p {
 }
 
 #logo {
-	margin-left: 15px;
+	margin-left: 25%;
 	text-align: left; 
 	font-size: 35px;
 	width: 30%;
@@ -58,7 +59,7 @@ p {
 #menu {
  /*float: left; width: 60%;*/
  text-align: right; 
- margin-right: 20px;
+ margin-right: 25%;
  position: relative;
  font-size: 18px;
  top: 80%;
