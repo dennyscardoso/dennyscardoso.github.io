@@ -10,7 +10,7 @@
  
   
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>tooltips</title>
+    <title>Questao04</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +18,7 @@
     <link href="../aula19/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../aula19/bootstrap/css/bootstrap.css" rel="stylesheet">
     <link href="..aula19/bootstrap/css/bootstrap.css" rel="stylesheet">
-    
+     <link href="..aula19/bootstrap/css/aula23.css" rel="stylesheet">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,33 +29,32 @@
     <![endif]-->
   </head>
   <body>
-    <script type="text/javascript">
-       var lista1 = Array();
 
-       var lista2 = Array('Delphi','Pascal', 'C', 'C++','Prolog');
-       function teste(){
-        lista1[1] = 'PHP';
-        lista1[2] = 'Java';
-        lista1[3] = 'Python';
-        lista1[4] = 'Perl';
+<script type="text/javascript">
+var nome = prompt("Nome:");
+var nota1 = parseInt(prompt("Nota01:"));
+var nota2 = parseInt(prompt("Nota02:"));
+media = (nota1+nota2)/2;
 
-        for (var i =1; i < lista1.length; i++) {
-          document.write(lista2[i]+'<br>');
-        }
-        document.write('<a href="javascript:posicao()">Consultar</a><br>');
+if (media>=8) {
+document.write ("APROVADO")
+}
+else 
+{
+ 
+document.write ("REPROVADO")
+}
 
-       }
 
-       function posiccao(){
-        
-       }
-    </script>
-  
+
+</script> 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    
+   
+
 
     <script src="../aula19/bootstrap/js/bootstrap.min.js"></script>
   </body>

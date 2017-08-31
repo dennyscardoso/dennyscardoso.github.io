@@ -10,7 +10,7 @@
  
   
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Questao01</title>
+    <title>Questao02</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -31,11 +31,14 @@
   <body>
 
 <script type="text/javascript">
-num1=prompt("Numero 01:");
-num2=prompt("Numero 02:");
-media = (num1+num2)/2;
+var nome = prompt("Nome:");
+var sal = parseFloat(prompt("salario:"));
+novosal = (sal*0.10)+(sal);
 {
-   document.write ("media igual ah:"+media+"/");
+  document.write ("Funcionario:"+nome); 
+      document.write ("Novo Salario:"+novosal);
+
+      //document.write ("media igual ah:"+media);
 }
 
 </script> 
