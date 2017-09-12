@@ -1,3 +1,4 @@
+var rodada = 1;
 $(document).ready( function() {
 
 	$('#btn_iniciar_jogo').click( function(){
@@ -21,10 +22,26 @@ $(document).ready( function() {
 			$('#pagina_inicial').hide();
 			$('#palco_jogo').show();
 				});
+
+
 	$('.jogada').click( function(){
-			alert("jogada capturada")
+			var id_campo_clicado = this.id;
+			jogada(id_campo_clicado);
+			//alert("jogada capturada:"+id_campo_clicado)
 	})
 
-	
-
 });
+
+function jogada(id) {
+	var icone = '';
+	if ((rodada % 2) == 1 ){
+		icone = 'url(imagens/marcacao_1.png)';
+	}
+
+	else{
+		icone = 'url(imagens/marcacao_2.png)';
+	}
+	rodada++;
+
+	$('#'+id).css('background-image', icone);
+}
