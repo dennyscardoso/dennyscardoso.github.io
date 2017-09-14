@@ -1,8 +1,30 @@
 
+var rodada = 1;
+
+
+var matriz_jogo = Array(3);
+
+matriz_jogo['a']= Array(3);
+matriz_jogo['b']= Array(3);
+matriz_jogo['c']= Array(3);
+
+matriz_jogo['a'][1]= 0;
+matriz_jogo['a'][2]= 0;
+matriz_jogo['a'][3]= 0;
+
+matriz_jogo['b'][1]= 0;
+matriz_jogo['b'][2]= 0;
+matriz_jogo['b'][3]= 0;
+
+matriz_jogo['c'][1]= 0;
+matriz_jogo['c'][2]= 0;
+matriz_jogo['c'][3]= 0;
+
+
 $(document).ready( function() {
 
 	$('#btn_iniciar_jogo').click( function(){
-			alert('Jogo iniciado!');
+//			alert('Jogo iniciado!');
 	
 	
 
@@ -48,8 +70,9 @@ function jogada(id) {
 
 	$('#'+id).css('background-image', icone);
 
-	var linha_coluna = id.split('_');
-
+	var linha_coluna = id.split('-');
+	var linha = linha_coluna[0];
+	var coluna = linha_coluna[1];
 	//alert('Linha'+linha_coluna[0]);
 	//alert('Linha'+linha_coluna[1]);
 
@@ -57,28 +80,6 @@ function jogada(id) {
 	console.log(matriz_jogo);
 	verifica_ganhador();
 }
-
-
-
-var rodada = 1;
-
-var matriz_jogo = Array(3);
-
-matriz_jogo['a']= Array(3);
-matriz_jogo['b']= Array(3);
-matriz_jogo['c']= Array(3);
-
-matriz_jogo['a'][1]= 0;
-matriz_jogo['a'][2]= 0;
-matriz_jogo['a'][3]= 0;
-
-matriz_jogo['b'][1]= 0;
-matriz_jogo['b'][2]= 0;
-matriz_jogo['b'][3]= 0;
-
-matriz_jogo['c'][1]= 0;
-matriz_jogo['c'][2]= 0;
-matriz_jogo['c'][3]= 0;
 
 
 function verifica_ganhador(){
@@ -129,14 +130,14 @@ mostra_ganhador(pontos);
 
 	 function mostra_ganhador(pontos){
 
-	 	if(pontos == -3){
+	 	if (pontos == -3){
 	 		var jogada_1 = $('#entrada_apelido_jogador_1').val();
-	 		alert(jogada_1+'é o vencedor');
+	 		alert(jogada_1 +'é o vencedor');
 	 		$('.jogada').off();
 
 	 	}else if (pontos == 3) {
 	 		var jogada_2 = $('#entrada_apelido_jogador_2').val();
-	 		alert(jogada_2+'é o vencedor');
+	 		alert(jogada_2 +'é o vencedor');
 	 		$('.jogada').off();
 	 	}
 	 }
