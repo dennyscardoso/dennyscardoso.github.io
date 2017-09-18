@@ -11,41 +11,9 @@
     <!-- jquery -->
     <script src="../aula19/jquery-3.2.1.min.js "></script>
     <script src="../aula19/bootstrap/js/bootstrap.min.js"></script>
-    
+    <script src="js12.js"></script>
 
-    <script type="text/javascript">
-      
-      function exibirOcultarTAG(tag,flag){
-     $(document).ready(function(){
-    $("#hide").click(function(){
-        $("p").hide();
-    });
-    $("#show").click(function(){
-        $("p").show();
-    });
-});
-      }
-
-
-      function exibirOcultarClasse(classe,flag){
-          $(document).ready(function(){
-    $("#hide").click(function(){
-        $("p").hide();
-    });
-    $("#show").click(function(){
-        $("p").show();
-    });
-});
-      } 
-
-
-      function exibirOcultarID(id,flag){
-        if(flag)
-          $('#'+id).show();
-        else
-          $('#'+id).hide();
-      }             
-    </script>
+   
 
   </head>
 
@@ -82,8 +50,10 @@
         </div>
 
         <div class="col-md-4">
-          <input id="campo1" type="text" class="form-control" />
-          <input id="campo1" type="text" class="form-control" />
+                  <h3>Formulario</h3>
+          Nome: <input id="campo1" type="text" class="form-control">
+          Email: <input id="campo1" type="text" class="form-control campo"> <br>
+          
         </div>
       </div>
 
@@ -91,27 +61,27 @@
 
       <div class="row">
         <div class="col-md-4">
-          <button id="hide" class="btn btn-danger"  onclick="exibirOcultarTAG('p')">Esconder parágrafos</button>
-          <button id="show" class="btn btn-success" onclick="exibirOcultarTAG('p')">Exibir parágrafos</button>
+          <button id="hide" class="btn btn-danger"  onclick="exibirOcultarTAG('p', false)">Esconder parágrafos</button>
+          <button id="show" class="btn btn-success" onclick="exibirOcultarTAG('p', true)">Exibir parágrafos</button>
         </div>
 
         <div class="col-md-4">
-          <button type="button" class="btn btn-danger"  onclick="exibirOcultarClasse('caixa2')">Esconder divs</button>
-          <button type="button" class="btn btn-success" onclick="exibirOcultarClasse('caixa2')">Exibir divs</button>
+          <button type="button" class="btn btn-danger"  onclick="exibirOcultarClasse('caixa2', false)">Esconder divs</button>
+          <button type="button" class="btn btn-success" onclick="exibirOcultarClasse('caixa2', true)">Exibir divs</button>
         </div>
 
         <div class="col-md-4">
-          <button type="button" class="btn btn-danger"  onclick="exibirOcultarID('campo1')">Esconder inputs</button>
-          <button type="button" class="btn btn-success" onclick="exibirOcultarID('campo1')">Exibir inputs</button>
+          <button type="button" class="btn btn-danger"  onclick="exibirOcultarID('campo1', false)">Esconder inputs</button>
+          <button type="button" class="btn btn-success" onclick="exibirOcultarID('campo1', true)">Exibir inputs</button>
         </div>
 
       </div>
       
     </div>
 
+      
 
-
-    <center><h1>IINCOMPLETO    </h1></center>
+    
   </body>
 </html>
     

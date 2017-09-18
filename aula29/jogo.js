@@ -121,11 +121,14 @@ mostra_ganhador(pontos);
 
 		}
 				//verifica na Diagonal 
+  	 	    for (var k = 1; k <= 3; k++) {
+     		pontos = 0;
+    	    pontos += matriz_jogo['a'][1];
+     		pontos += matriz_jogo['b'][2];
+     		pontos += matriz_jogo['c'][3];
 
-
-				for (var k =  1; k <= 3; k++){
-
-				}
+     mostra_ganhador(pontos);
+   }
 	 } 
 
 	 function mostra_ganhador(pontos){
