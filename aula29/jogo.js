@@ -127,8 +127,8 @@ mostra_ganhador(pontos);
      		pontos += matriz_jogo['b'][2];
      		pontos += matriz_jogo['c'][3];
 
-     mostra_ganhador(pontos);
-   }
+    
+   } mostra_ganhador(pontos);
 	 } 
 
 	 function mostra_ganhador(pontos){
