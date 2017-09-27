@@ -15,3 +15,10 @@
 	background-color: #C6AFD5;
 }
 
+
+.ttt{
+  border: 1px solid green;
+  border-left-width: 0;
+  min-width: 120px;
+  height: 18px;
+}
